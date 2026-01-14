@@ -8,6 +8,7 @@ export default defineConfig({
     react(),
     basicSsl()
   ],
+  base:process.env.VITE_BASE_PATH || '/uc-v1',
   server: {
     host: true, // Expose to network
     proxy: {
